@@ -1,7 +1,8 @@
-package com.example.springapp.controler;
+package com.example.springdemo.controller;
 
-import com.example.springapp.student.StudentClass;
-import com.example.springapp.repository.StudentRepository;
+
+import com.example.springdemo.repository.StudentRepository;
+import com.example.springdemo.student.StudentClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
