@@ -48,9 +48,10 @@ public class StudentController {
     }
 
     @DeleteMapping("/{id}")
-    public void removeStudent(@PathVariable int id) {
+    public boolean removeStudent(@PathVariable int id) {
         StudentClass student = repo.findById(id).get();
         repo.delete(student);
+        return true;
     }
 
     @PatchMapping("/{id}")
